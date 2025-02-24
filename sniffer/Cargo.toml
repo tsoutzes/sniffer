@@ -1,0 +1,8 @@
+[package]
+name = "sniffer"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+sniffer-cli = { path = "../sniffer-cli" }
+

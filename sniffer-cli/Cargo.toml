@@ -1,0 +1,6 @@
+[package]
+name = "sniffer-cli"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]

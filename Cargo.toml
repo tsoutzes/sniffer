@@ -1,6 +1,8 @@
-[package]
-name = "sniffer"
+[workspace]
+members = ["sniffer", "sniffer-cli"]
+resolver = "2"
+
+# Optional workspace-wide settings
+[workspace.package]
 version = "0.1.0"
 edition = "2021"
-
-[dependencies]
