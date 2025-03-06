@@ -1,11 +1,12 @@
-use sniffer_cli::Command;
+use core::Command;
+use sniffer_cli::{CliDiscovery, CliExecutor};
 
 fn main() {
-    let args: Vec<String> = std::env::args().collect();
+    let command = Command::discover(&CliDiscovery);
 
-    match Command::parse_args(&args) {
+    match command {
         Some(cmd) => {
-            if let Err(e) = cmd.execute() {
+            if let Err(e) = cmd.execute(&CliExecutor) {
                 eprintln!("Error executing command: {}", e);
                 std::process::exit(1);
             }

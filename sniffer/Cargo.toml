@@ -5,4 +5,5 @@ edition.workspace = true
 
 [dependencies]
 sniffer-cli = { path = "../sniffer-cli" }
+core = { path = "../core" }
 
