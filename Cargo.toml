@@ -1,5 +1,5 @@
 [workspace]
-members = ["sniffer", "sniffer-cli"]
+members = ["core", "sniffer", "sniffer-cli"]
 resolver = "2"
 
 # Optional workspace-wide settings
